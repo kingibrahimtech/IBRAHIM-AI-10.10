@@ -10,7 +10,7 @@ RUN apt-get update && \
   rm -rf /var/lib/apt/lists/*
   
 RUN git clone https://github.com/ibrahimaitech/BMW-MD.git  /root/Bmw_Bot
-WORKDIR /root/Bmw_Bot/
+WORKDIR /root/bmwmd/
 
 
 COPY package.json .
