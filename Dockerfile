@@ -9,8 +9,8 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/ibrahimaitech/BMW-MD.git  /root/BmwMD
-WORKDIR /root/ibrahim/
+RUN git clone https://github.com/ibrahimaitech/BMW-MD.git  /root/Bmw_Bot
+WORKDIR /root/Bmw_Bot/
 
 
 COPY package.json .
