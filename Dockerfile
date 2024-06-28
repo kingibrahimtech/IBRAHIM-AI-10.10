@@ -9,9 +9,8 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN  git clone https://github.com/ibrahimaitech/BMW-MD.git  /root/BmwMD
-WORKDIR /root/bmwmd/
-
+RUN git clone https://github.com/ibrahimaitech/BMW-MD.git /root/ibrahim
+WORKDIR /root/ibrahim/
 
 
 COPY package.json .
@@ -22,5 +21,4 @@ COPY . .
 
 EXPOSE 5000
 
-
-CMD ["npm","run", "bmwmd"]
+CMD ["node", "ibrahim.js"]
